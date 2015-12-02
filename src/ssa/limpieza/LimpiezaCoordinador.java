@@ -39,7 +39,7 @@ public class LimpiezaCoordinador {
         modelo.setCoordinador(this);
         
         vista.setVisible(true);
-        llenaCampos(vista.tblDatos);
+        llenaCampos(LimpiezaVista.tblDatos);
         
     }
     
@@ -51,23 +51,26 @@ public class LimpiezaCoordinador {
         //int columnas = tabla.getColumnCount();
         
         ButtonGroup grupo1 = new ButtonGroup();
-        DefaultTableModel modelo = (DefaultTableModel) tabla.getModel();
+        DefaultTableModel tblMomodelo = (DefaultTableModel) tabla.getModel();
         
         //Información de los tipos de persona que se cargarán en el listBox
-        String[] datoListBox = {"Misma Persona",  "Datos insuficientes", "Persona distinta"};
+        String[] datoListBox = modelo.getTipoPersona();
+        // Se cargan los nombres de las personas que son posibles duplicados
+        String[] personas = modelo.getPersonasDuplicadas();
+        
+        //Se llena la tabla con la informacion recabada
         for (int i = 0; i < 10; i++) {
-            /*modelo.addRow(new Object[]{
-                new JRadioButton(), "ListBox", "Sergio Alan " + i, "Betancourt " + i, 
-                "Almanza " + i, "BEAS910215 " + i, "15-02-15 " + i, "M " + i, 
-                "15-02-15 " + i, "BEAS910215" + i});*/
-            modelo.addRow(new Object[]{
+            
+            tblMomodelo.addRow(new Object[]{
                 new JRadioButton(), new JComboBox(datoListBox),
-                "#DERECHOHABIENCIA", "Betancourt " + i, "Almanza " + i,
-                "Sergio Alan " + i, "15-02-15 " + i, "M " + i, "Direccion " + i,
-                "Num exterior " + i, "Numero int " + i, "Colonia " +i, "CP " + i,
-                "Telefono " + i, "BEAS910215 " + i, "BEAS910215 " + i, "Soltero " + i,   
-                "Chihuahua " + i, "ayer " + i, "Chihuahua" + i,"Chihuahua" + i, "Chihuahua" + i, "NUNCA " + i});
-            grupo1.add((JRadioButton) modelo.getValueAt(i, 0));
+                personas[0], personas[1] + " " + i, personas[2] + " " + i,
+                personas[3] + " " + i, personas[4] + " " + i, personas[5] + " " + i, 
+                personas[6] + " " + i, personas[7] + " " + i, personas[8] + " " + i, 
+                personas[9] + " " + i, personas[10] + " " + i, personas[11] + " " + i, 
+                personas[12] + " " + i, personas[13] + " " + i, personas[14] + " " + i,   
+                personas[15] + " " + i, personas[16] + " " + i, personas[17] + " " + i,
+                personas[18] + " " + i, personas[19] + " " + i, personas[20] + " " + i});
+            grupo1.add((JRadioButton) tblMomodelo.getValueAt(i, 0));
             
         }
         
