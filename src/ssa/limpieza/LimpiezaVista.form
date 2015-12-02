@@ -29,7 +29,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="pnlInfo" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="205" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="536" max="32767" attributes="0"/>
                   </Group>
                   <Component id="pnlDatos" max="32767" attributes="0"/>
               </Group>
@@ -42,7 +42,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="pnlInfo" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="pnlDatos" max="32767" attributes="0"/>
+              <Component id="pnlDatos" min="-2" pref="513" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -136,41 +136,39 @@
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="pnlDatos">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[537, 531]"/>
+        </Property>
+      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  <Component id="btnSiguiente" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <Component id="scrollTblDatos" max="32767" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-              </Group>
-              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="824" max="32767" attributes="0"/>
-                      <Component id="btnGuardar1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="scrollTblDatos" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="btnGuardar1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                          <Component id="btnSiguiente" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="scrollTblDatos" pref="350" max="32767" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btnSiguiente" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-              </Group>
-              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="368" max="32767" attributes="0"/>
-                      <Component id="btnGuardar1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="scrollTblDatos" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnSiguiente" alignment="3" max="-2" attributes="0"/>
+                      <Component id="btnGuardar1" alignment="3" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -188,7 +186,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                   <Connection code="tblDatosModel" type="code"/>
                 </Property>
-                <Property name="autoResizeMode" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor" postCode="/**&#xa;    * Tama&#xf1;o de las columnas&#xa;    */&#xa;   //Columna Base&#xa;   tblDatos.getColumnModel().getColumn(0).setPreferredWidth(50);&#xa;   //Columna Relaci&#xf3;n con registro base&#xa;   tblDatos.getColumnModel().getColumn(1).setPreferredWidth(150);&#xa;   //Columna Nombre&#xa;   tblDatos.getColumnModel().getColumn(2).setPreferredWidth(100);&#xa;   //Columna Apellido Paterno&#xa;   tblDatos.getColumnModel().getColumn(3).setPreferredWidth(120);&#xa;   //Columna Apellido Materno&#xa;   tblDatos.getColumnModel().getColumn(4).setPreferredWidth(120);&#xa;   //Columna CURP&#xa;   tblDatos.getColumnModel().getColumn(5).setPreferredWidth(120);&#xa;   //Columna Fecha de nacimiento&#xa;   tblDatos.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;   //Columna Sexo&#xa;   //tblDatos.getColumnModel().getColumn(7).setPreferredWidth(50);&#xa;   //Columna Fecha de registro&#xa;   tblDatos.getColumnModel().getColumn(8).setPreferredWidth(80);&#xa;   //Columna RFC&#xa;   tblDatos.getColumnModel().getColumn(9).setPreferredWidth(120);&#xa;    /**&#xa;        * Termina tama&#xf1;o de columnas&#xa;    */">
+                <Property name="autoResizeMode" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor" postCode="/**&#xa;    * Tama&#xf1;o de las columnas&#xa;    */&#xa;    //Columna Base&#xa;        tblDatos.getColumnModel().getColumn(0).setPreferredWidth(50);&#xa;    //Columna Relaci&#xf3;n con registro base&#xa;        tblDatos.getColumnModel().getColumn(1).setPreferredWidth(150);&#xa;    //Columna N&#xfa;mero de derechohabiencia&#xa;        tblDatos.getColumnModel().getColumn(2).setPreferredWidth(180);&#xa;    //Columna Apellido Paterno&#xa;        tblDatos.getColumnModel().getColumn(3).setPreferredWidth(120);&#xa;    //Columna Apellido Materno&#xa;        tblDatos.getColumnModel().getColumn(4).setPreferredWidth(120);&#xa;    //Columna Nombre(s)&#xa;        tblDatos.getColumnModel().getColumn(5).setPreferredWidth(100);&#xa;    //Columna Fecha de nacimiento&#xa;        tblDatos.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;    //Columna Sexo&#xa;        //tblDatos.getColumnModel().getColumn(7).setPreferredWidth(50);&#xa;    //Columna Direcci&#xf3;n&#xa;        tblDatos.getColumnModel().getColumn(8).setPreferredWidth(150);&#xa;    //Columna N&#xfa;mero exterior&#xa;        tblDatos.getColumnModel().getColumn(9).setPreferredWidth(120);&#xa;    //Columna N&#xfa;mero Interior&#xa;        tblDatos.getColumnModel().getColumn(10).setPreferredWidth(120);&#xa;    //Columna Colonia&#xa;        tblDatos.getColumnModel().getColumn(11).setPreferredWidth(120);&#xa;    //Columna Codigo Postal&#xa;        tblDatos.getColumnModel().getColumn(12).setPreferredWidth(120);&#xa;    //Columna Telefono&#xa;        tblDatos.getColumnModel().getColumn(13).setPreferredWidth(120);&#xa;    //Columna CURP&#xa;        tblDatos.getColumnModel().getColumn(14).setPreferredWidth(120);&#xa;    //Columna RFC&#xa;       tblDatos.getColumnModel().getColumn(15).setPreferredWidth(120);&#xa;    //Columna Estado civil&#xa;       tblDatos.getColumnModel().getColumn(16).setPreferredWidth(120);&#xa;    //Columna Estado de nacimiento&#xa;       tblDatos.getColumnModel().getColumn(17).setPreferredWidth(120);&#xa;    //Columna Fecha de ingreso al padron&#xa;       tblDatos.getColumnModel().getColumn(18).setPreferredWidth(120);&#xa;    //Columna Clave localidad donde vive&#xa;       tblDatos.getColumnModel().getColumn(19).setPreferredWidth(120);&#xa;    //Columna Clave municipio donde vive&#xa;       tblDatos.getColumnModel().getColumn(20).setPreferredWidth(120);&#xa;    //Columna Clave estado donde vive&#xa;       tblDatos.getColumnModel().getColumn(21).setPreferredWidth(150);&#xa;    //Columna Clave Vigencia de derechohabiencia&#xa;       tblDatos.getColumnModel().getColumn(22).setPreferredWidth(150);&#xa;&#xa;    /**&#xa;        * Termina tama&#xf1;o de columnas&#xa;    */&#xa;&#xa;    /**&#xa;     * Inicia el tama&#xf1;o de los renglones&#xa;     */&#xa;     tblDatos.setRowHeight(25);&#xa;     /**&#xa;      * Termina tama&#xf1;o de los renglones&#xa;      */">
                   <Connection code="javax.swing.JTable.AUTO_RESIZE_OFF" type="code"/>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -201,8 +199,8 @@
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable(){&#xa;    public void tableChanged(TableModelEvent e){&#xa;        super.tableChanged(e);&#xa;        repaint();&#xa;    }&#xa;}"/>
-                <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="DefaultTableModel tblDatosModel = new DefaultTableModel();&#xa;tblDatosModel.setDataVector(null,&#xa;    new String [] {&#xa;        &quot;Base&quot;, &quot;Relaci&#xf3;n con registro base&quot;, &quot;Nombre&quot;, &quot;Ap. Paterno&quot;, &quot;Ap. Materno&quot;,&#xa;        &quot;CURP&quot;, &quot;Fecha de Nacimiento&quot;, &quot;Sexo&quot;, &quot;Fecha de registro&quot;, &quot;RFC&quot;&#xa;    });"/>
-                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="10"/>
+                <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="DefaultTableModel tblDatosModel = new DefaultTableModel();&#xa;tblDatosModel.setDataVector(null,&#xa;    new String [] {&#xa;        &quot;Base&quot;, &quot;Relaci&#xf3;n con registro base&quot;, &quot;N&#xfa;mero de derechohabiencia&quot;, &#xa;        &quot;Ap. paterno&quot;, &quot;Ap. materno&quot;, &quot; Nombre(s)&quot;, &quot;Fecha de nacimiento&quot;,&#xa;        &quot;Sexo&quot;, &quot;Direcci&#xf3;n&quot;, &quot;N&#xfa;mero exterior&quot;, &quot;N&#xfa;mero interior&quot; , &quot;Colonia&quot;,&#xa;        &quot;C&#xf3;digo postal&quot;, &quot;Tel&#xe9;fono&quot;, &quot;CURP&quot;, &quot;RFC&quot;, &quot;Estado civil&quot;,&#xa;        &quot;Estado de nacimiento&quot;, &quot;Fecha de ingreso al padron&quot;, &quot;Clave localidad donde vive&quot;,&#xa;        &quot;Clave municipio donde vive&quot;, &quot;Clave estado donde vive&quot;, &quot;Vigencia de la derechohabiencia&quot;});"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="12"/>
               </AuxValues>
             </Component>
           </SubComponents>
